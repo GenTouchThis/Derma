@@ -1,0 +1,195 @@
+{% extends "layout.twig.html" %}
+{% block header %}
+    <!-- Header -->
+    <header id="slide">
+        <div class="container">
+            <div class="intro-text">
+                <img src="{{asset('img/derma-logo.png')}}" class="img-responsive img-center">
+                <div class="divider-md"></div>
+                <a href="#services" class="page-scroll btn btn-lg btn-primary">Saber Más <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
+            </div>
+        </div>
+    </header>
+{% endblock %}
+{% block nav %}
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="{{path('inicio')}}">
+                    <img src="{{asset('img/cong-icon-md.png')}}">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                {{ include('nav.twig.html') }}
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+{% endblock %}
+{% block content %}
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UHw3yQb3WiA"></iframe>
+                    </div>
+                    <!--
+                    <h2 class="section-heading">Mensaje de Bienvenida</h2>
+                    <h3 class="section-subheading text-muted">Queridos colegas y amigos:</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-6 col-md-offset-3">
+                    <p>
+                        <img src="{{asset('img/javier-ruiz.jpg')}}" class="img-responsive img-circle img-centered">
+                    </p>
+                    <p class="lead">
+                        "Es para mi un gusto tener la oportunidad de convocarlos por quinta ocación al Congreso de Dermacosmética, que se llevará a cabo en el mes de Octubre en la Ciudad de México."
+                    </p>
+                    <p>
+                        Nuestra meta es contar con un espacio diseñado para el intercabio activo de conocimientos y experiencias.
+                    </p>
+                    <p>
+                        Los objetivos son, dar a conocer nuevas y diferentes alternativas de tratamiento, profundizar y perfeccionar técnicas ya conocidas, valorar tratamientos y establecer expectativas reales en la práctica clínica cotidiana.
+                    </p>
+                    <p class="lead">
+                        "Todos tenemos, no tan solo algo que aprender si no también algo que aportar"
+                    </p>
+                    <p>
+                        Convencidos de que quedarán satisfechos de los conocimientos adquiridos y las buenas experiencias vividas, esperando contar con su presencia del 6 al 8 de Octubre en nuestra nueva Sede Centro Banamex, Ciudad de México
+                    </p>
+                    <p>
+                        <b>Los espero en Octubre<br>Dr. Javier Ruíz</b>
+                    </p>
+                -->
+                </div>
+            </div>
+        </div>
+    </section> 
+    <div class="player">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>Visite Nuestra Galería de Ediciones Pasadas</h3>
+                    <p>
+                        <a class="video2015 white-link" href="http://www.youtube.com/embed/K69FWI23nlk?rel=0&amp;wmode=transparent" ><i class="fa fa-play-circle-o"></i> videomemoria 2015</a> | <a href="{{path('galeria')}}" class="white-link"><i class="fa fa-search-plus"></i> visitar galería</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>
+                        <img src="{{asset('img/derma-logo-sm.png')}}" class="img-responsive img-center">
+                    </p>
+                    <div class="divider-md"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="{{asset('img/about/1.jpg')}}" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Séptima<br>
+                                        exitosa edición</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="{{asset('img/about/2.jpg')}}" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Participantes<br>
+                                        nacionales y extranjeros</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="{{asset('img/about/3.jpg')}}" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4><span class="yellow">+</span> de 1500<br>
+                                        metros de exibición</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="{{asset('img/about/4.jpg')}}" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Aval de 70 laboratorios<br/>
+                                        y 200 marcas</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="{{asset('img/about/5.jpg')}}" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Tálleres y pláticas<br>
+                                        teórico - práctico</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="{{asset('img/about/6.jpg')}}" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Profesores y especialistas<br/>
+                                        nacionales e internacionales</h4>
+                                </div>
+                            </div>
+                        </li>   
+                    </ul>
+                    <div class="ending text-center">
+                        <h4>Todos los líderes  
+                            <br>de la dermatología cosmética
+                            <br>y clínica en un mismo evento 
+                        </h4>
+                        <p>
+                            <a href="{{path('costos')}}" class="btn btn-warning"><i class="fa fa-pencil-square"></i> ¡Inscribirse Ahora!</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock %}
+    {% block js %}
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="{{asset('js/classie.js')}}"></script>
+    <script src="{{asset('js/cbpAnimatedHeader.js')}}"></script>
+    {% endblock %}
+

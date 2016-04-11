@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Congreso Dermacosmética 2016</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
+
+    <!-- Custom CSS -->
+    <link href="{{asset('css/agency.css')}}" rel="stylesheet">
+    <link href="{{asset('css/colorbox.css')}}" rel="stylesheet">
+    <link href="{{asset('css/main.css')}}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{{asset('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+{% block nav %}
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="{{path('inicio')}}">
+                    <img src="{{asset('img/cong-icon-md.png')}}">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                {{ include('nav.twig.html') }}
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+{% endblock %}
+{% block header %}
+    <header id="slide" style="height: 300px; padding-top: 100px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img src="{{asset('img/derma-logo-sm.png')}}" class="img-responsive img-center">
+                </div>
+            </div>
+        </div>
+    </header>
+{% endblock %}
+{% block content %}
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Mensaje de Bienvenida</h2>
+                    <h3 class="section-subheading text-muted">Nuestro Presidente</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-6 col-md-offset-3">
+                    <p>
+                        <img src="img/presidente.jpg" class="img-responsive img-circle img-centered">
+                    </p>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat ante enim, ut bibendum nunc aliquam id. Ut metus dui, mattis eget metus in, bibendum viverra mauris. 
+                    </p>
+                    <p>
+                        Ut vehicula nibh a sodales gravida. Morbi ultricies, orci et egestas ullamcorper, sapien nulla rutrum orci, sed facilisis turpis sapien eu risus. Morbi feugiat neque turpis, sit amet maximus ex blandit eget. Nam faucibus ut risus ut scelerisque. Praesent justo quam, sagittis ac felis eleifend, semper vulputate magna. Integer nulla metus, mattis a sodales a, imperdiet sed augue. Vivamus porttitor quam sed convallis sagittis. Proin quis fermentum lacus. Cras a tellus sodales, commodo mauris eget, rhoncus sapien. Nulla sed tincidunt nibh, nec hendrerit elit. Praesent imperdiet ac nibh vel hendrerit. Suspendisse ut nisl magna. Curabitur ornare urna arcu, vitae pretium tellus vulputate vitae.
+                    </p>
+                    <p>
+                        Maecenas tellus lacus, auctor ut lorem eget, molestie ultrices urna. Vestibulum fermentum in tortor dapibus efficitur. Sed aliquet aliquet lacus nec bibendum. Morbi iaculis tellus leo, in convallis neque viverra ut. In sollicitudin dictum leo, eget placerat sem egestas non. Fusce a felis sit amet magna varius tristique. Etiam mi velit, mollis a nulla vel, dictum laoreet justo. Fusce malesuada eget mauris vitae euismod. Proin finibus metus dapibus urna viverra fringilla. Morbi lobortis arcu id luctus molestie. Maecenas eget dolor mi. Etiam bibendum ultricies ligula, ut suscipit arcu semper ut. Phasellus et dui leo
+                    </p>
+                    <p>
+                        <b>Kenneth "The Snake" Stabler<br>Presidente del Comite XIX Congreso</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <h2 class="section-heading">Objetivos del XIX Congreso</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <ul>
+                        <li>
+                            Maecenas tellus lacus, auctor ut lorem eget, molestie ultrices urna. Vestibulum fermentum in tortor dapibus efficitur. Sed aliquet aliquet lacus nec bibendum. 
+                        </li>
+                        <li>
+                            Morbi iaculis tellus leo, in convallis neque viverra ut. In sollicitudin dictum leo, eget placerat sem egestas non.
+                        </li>
+                        <li>
+                            Fusce a felis sit amet magna varius tristique. Etiam mi velit, mollis a nulla vel, dictum laoreet justo. Fusce malesuada eget mauris vitae euismod. Proin finibus metus dapibus urna viverra fringilla.
+                        </li>
+                        <li>
+                            Morbi lobortis arcu id luctus molestie. Maecenas eget dolor mi. Etiam bibendum ultricies ligula, ut suscipit arcu semper ut. Phasellus et dui leo
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Recinto</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Cancun ICC</h4>
+                                    <h4 class="subheading">International Convention Center</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>7,296.00 m2 de Exibición</h4>
+                                    <h4 class="subheading">Más de 72 Expositores del ramo</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Business Center</h4>
+                                    <h4 class="subheading">Un extenso programa de Cita de Negocios</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Cursos y Talleres de Actualización</h4>
+                                    <h4 class="subheading">Un Nuevo Programa para estar al día</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>Sea Parte
+                                    <br>de Nuestro
+                                    <br>Congreso</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h2 class="section-heading">Nuestros Patrocinadores</h2>
+                    <h3 class="text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                    <p>
+                        <img src="img/patrocinadores.png" class="img-responsive img-centered">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Congreso Dermacosmética 2016</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="https://twitter.com/dermacosmetica" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="https://www.facebook.com/dermacosmetica2015" target="_blank"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="https://twitter.com/javierderma"><i class="fa fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a data-toggle="modal" href="#myModal">Política de Privacidad</a>
+                        </li>
+                        <li><a href="{{path('contacto')}}">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Politicas Modal Bootstrap Style -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Políticas de Privacidad</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dapibus, lacus quis sollicitudin hendrerit, mauris felis bibendum magna, sit amet gravida tellus diam at massa. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent dignissim ornare massa a aliquam. Donec imperdiet est neque, sed mollis libero convallis ac. Nullam in hendrerit mauris, eget eleifend urna. Fusce tincidunt ipsum nec tristique sollicitudin. Praesent eget magna euismod, facilisis massa pharetra, pharetra ex. Nullam quis justo in turpis finibus finibus. 
+                    </p>
+                    <p>
+                        Pellentesque euismod risus nisi, vitae placerat nisl congue eu. Nunc non vestibulum metus. Nunc tristique libero pretium dui condimentum, ut condimentum leo auctor. Proin maximus sit amet lorem nec vestibulum. Suspendisse auctor condimentum elementum. Integer velit felis, placerat id elit nec, commodo ornare sem. Duis ac diam ornare erat aliquet semper eu id est. Donec aliquet est nibh, efficitur pellentesque nibh fermentum at. 
+                    </p>
+                    <p>
+                        Praesent nibh mauris, feugiat sed mi luctus, elementum volutpat lacus. Phasellus consequat auctor odio sed suscipit. Aliquam aliquam elit vitae tortor scelerisque, non luctus dui volutpat. Maecenas finibus, ex nec porttitor vestibulum, massa turpis dignissim velit, at molestie quam neque ac leo. Sed dapibus vestibulum sapien, vel pellentesque urna dignissim in. Vestibulum sollicitudin lacus faucibus est placerat, suscipit iaculis justo varius. Sed eu finibus magna, a ultrices nibh. Donec sit amet nibh eleifend, consectetur libero ut, hendrerit massa. Pellentesque ultrices tellus non placerat vulputate. Ut a faucibus augue. Nullam scelerisque eros urna, eu pellentesque odio cursus ut. Vivamus ac justo sit amet tellus ultricies porta et ut ex. 
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="{{asset('js/jquery.js')}}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{asset('js/bootstrap.min.js')}}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js')}}"></script>
+    {% block js %}
+    {% endblock %}
+
+    <!-- Custom Theme JavaScript -->
+    <script src="{{asset('js/agency.js')}}"></script>
+    <script src="{{asset('js/jquery.colorbox.js')}}"></script>
+    <script src="{{asset('js/backstretch.min.js')}}"></script>
+    <script>
+        $("#slide").backstretch([
+            "{{asset('img/bg/derma001.jpg')}}",
+            "{{asset('img/bg/derma002.jpg')}}",
+            "{{asset('img/bg/derma003.jpg')}}"    
+            ], {duration: 3000, fade: 750}
+        );
+    </script>
+
+</body>
+
+</html>

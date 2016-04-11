@@ -1,0 +1,157 @@
+{% extends "layout.twig.html" %}
+{% block content %}
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Hospedaje</h2>
+                    <div class="line-center"></div>
+                    <h3>Lista de Hoteles con tárifas especiales</small></h3>
+                    <p><a data-toggle="modal" href="#myModal">Políticas de Reservación</a></p>
+                    <div class="divider-sm"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 text-justify">
+                    <img src="{{asset('img/casainn.jpg')}}" class="img-responsive img-centered img-circle" width="250px">
+                    <h4 class="text-center">Hotel Casa Inn</h4>
+                    <div class="alert alert-info">
+                        <strong>Código de Reservación:</strong> Congreso DermaCosmética 2015 
+                    </div>
+                    <p>
+                        <strong>Observaciones:</strong><br>
+                        &middot; Tarifa por habitación, por noche, en plan europeo (Sin Alimentos), sujetas al 16% de IVA más el 3% de Impuesto Oficial sobre Hospedaje.<br>
+                        &middot; La tarifa aplica 3 días antes y 3 días después de la fecha oficial del evento.<br>
+                        <strong>Propinas:</strong><br>
+                        &middot; Botones (Por persona, entrada y salida): A discreción<br>
+                        &middot; Camaristas (Por habitación, por noche): A discreción<br>
+                        &middot; Check in 15:00 hrs. / Check out 13:00 hrs.<br>
+                        &middot; Cancelación tardía o no show: 1 noche, más impuestos <br>
+                        <strong>Reservaciones:</strong><br>
+                        Tel. (5255) 5242 7750 EXT. 2001 ó 3403/01800 900 1400 – México<br>
+                        <strong>E-mail:</strong><br>
+                        reservacionesmexico@casainn.com.mx<br>
+                        ventas4mex@casainn.com.mx<br>
+                        Web: www.casainn.com.mx
+                    </p>
+                    <table class="table table-condensed table-striped">
+                        <tr class="info">
+                            <td><strong>Tipo de Habitación</strong></td>
+                            <td><strong>Costo</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Sencilla</td>
+                            <td>$ 34.50</td>
+                        </tr>
+                        <tr>
+                            <td>Doble</td>
+                            <td>$ 44.50</td>
+                        </tr>
+                        <tr>
+                            <td>Triple</td>
+                            <td>$ 54.50</td>
+                        </tr>
+                    </table>
+                    <div class="divider-md"></div>
+                </div>
+                <div class="col-md-4">
+                    <img src="{{asset('img/wyndham.jpg')}}" class="img-responsive img-centered img-circle" width="250px">
+                    <h4 class="text-center">Hotel Wyndham Garden Polanco</h4>
+                    <div class="alert alert-info">
+                        <strong>Código de Reservación:</strong> Congreso DermaCosmética 2015 
+                    </div>
+                    <p>
+                        <strong>Observaciones:</strong><br>
+                        &middot; Tarifa por habitación, por noche, en plan europeo (Sin Alimentos), sujetas al 16% de IVA más el 3% de Impuesto Oficial sobre Hospedaje.<br>
+                        &middot; La tarifa aplica 3 días antes y 3 días después de la fecha oficial del evento.<br>
+                        <strong>Propinas:</strong><br>
+                        &middot; Botones (Por persona, entrada y salida): A discreción<br>
+                        &middot; Camaristas (Por habitación, por noche): A discreción<br>
+                        &middot; Check in 15:00 hrs. / Check out 13:00 hrs.<br>
+                        &middot; Cancelación tardía o no show: 1 noche, más impuestos <br>
+                        <strong>Reservaciones:</strong><br>
+                        Tel. (5255) 5242 7750 EXT. 2001 ó 3403/01800 900 1400 – México<br>
+                        <strong>E-mail:</strong><br>
+                        reservacionesmexico@casainn.com.mx<br>
+                        ventas4mex@casainn.com.mx<br>
+                        Web: www.casainn.com.mx
+                    </p>
+                    <table class="table table-condensed table-striped">
+                        <tr class="info">
+                            <td><strong>Tipo de Habitación</strong></td>
+                            <td><strong>Costo</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Sencilla</td>
+                            <td>$ 34.50</td>
+                        </tr>
+                        <tr>
+                            <td>Doble</td>
+                            <td>$ 44.50</td>
+                        </tr>
+                        <tr>
+                            <td>Triple</td>
+                            <td>$ 54.50</td>
+                        </tr>
+                    </table>
+                    <div class="divider-md"></div>
+                </div>
+                <div class="col-md-4">
+                    <img src="{{asset('img/grand.jpg')}}" class="img-responsive img-centered img-circle" width="250px">
+                    <h4 class="text-center">Hotel Fiesta Americana Grand Chapultepec</h4>
+                    <div class="alert alert-info">
+                        <strong>Código de Reservación:</strong> Congreso DermaCosmética 2015 
+                    </div>
+                    <p>
+                        <strong>Observaciones:</strong><br>
+                        &middot; Tarifa por habitación, por noche, en plan europeo (Sin Alimentos), sujetas al 16% de IVA más el 3% de Impuesto Oficial sobre Hospedaje.<br>
+                        &middot; La tarifa aplica 3 días antes y 3 días después de la fecha oficial del evento.<br>
+                        <strong>Propinas:</strong><br>
+                        &middot; Botones (Por persona, entrada y salida): A discreción<br>
+                        &middot; Camaristas (Por habitación, por noche): A discreción<br>
+                        &middot; Check in 15:00 hrs. / Check out 13:00 hrs.<br>
+                        &middot; Cancelación tardía o no show: 1 noche, más impuestos <br>
+                        <strong>Reservaciones:</strong><br>
+                        Tel. (5255) 5242 7750 EXT. 2001 ó 3403/01800 900 1400 – México<br>
+                        <strong>E-mail:</strong><br>
+                        reservacionesmexico@casainn.com.mx<br>
+                        ventas4mex@casainn.com.mx<br>
+                        Web: www.casainn.com.mx
+                    </p>
+                    <table class="table table-condensed table-striped">
+                        <tr class="info">
+                            <td><strong>Tipo de Habitación</strong></td>
+                            <td><strong>Costo</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Sencilla</td>
+                            <td>$ 34.50</td>
+                        </tr>
+                        <tr>
+                            <td>Doble</td>
+                            <td>$ 44.50</td>
+                        </tr>
+                        <tr>
+                            <td>Triple</td>
+                            <td>$ 54.50</td>
+                        </tr>
+                    </table>
+                    <div class="divider-md"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <h3>Datos de Contacto</h3>
+                    <h4>Reservaciones</h4>
+                    <p>
+                        Insurgentes Sur #0000 - 4do. Piso<br />
+                        Col. Insurgentes México<br />
+                        Ciudad de México, CP 01234<br />
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+

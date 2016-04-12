@@ -258,3 +258,8 @@ a.white-link:hover{
   font-weight: 700;
   text-align: center;
 }
+
+.construction{
+  font-size: 35px;
+  color: #CB187B;
+}

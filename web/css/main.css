@@ -263,3 +263,9 @@ a.white-link:hover{
   font-size: 35px;
   color: #CB187B;
 }
+
+.alert-warning {
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    color: #8a6d3b;
+}

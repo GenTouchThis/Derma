@@ -269,3 +269,34 @@ a.white-link:hover{
     border-color: #faebcc;
     color: #8a6d3b;
 }
+
+/* sponsors sizes */
+
+.platinum img{
+  width: 190px;
+  margin: 2px;
+}
+
+.gold img{
+  width: 220px;
+}
+
+.silver img{
+  width: 220px;
+}
+
+.bronze img{
+  width: 220px;
+}
+
+.cupper img{
+  width: 220px;
+}
+
+.iron img{
+  width: 220px;
+}
+
+.metal1 img, .metal2 img, .metal3 img, .metal4 img, .metal5 img, .metal6 img, .metal7 img{
+  width: 220px;
+}

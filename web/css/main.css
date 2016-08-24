@@ -300,3 +300,36 @@ a.white-link:hover{
 .metal1 img, .metal2 img, .metal3 img, .metal4 img, .metal5 img, .metal6 img, .metal7 img{
   width: 220px;
 }
+
+table{
+  min-width: 100%;
+
+}
+td,th{
+  text-align: center;
+  padding: 3px;
+  border-top: 1px solid #bfbfbf;
+  border-right: 1px solid #bfbfbf;
+}
+
+th{
+  background: #2f438c;
+  color: #FFF;
+  font-weight: normal;
+  letter-spacing: 1px;
+  padding: 10px
+}
+
+td{
+  padding: 7px 5px;
+}
+
+tr{
+  border-left: 1px solid #bfbfbf;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+h3.tab-head{
+  color: #ed5ab9;
+  margin-bottom: 35px;
+}

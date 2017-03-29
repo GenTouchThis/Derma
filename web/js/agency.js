@@ -8,6 +8,7 @@
 $(function() {
 	$(".galeria2014").colorbox({rel:'2014', transition:"fade"});
     $(".galeria2015").colorbox({rel:'2015', transition:"fade"});
+    $(".galeria2016").colorbox({rel:'2016', transition:"fade"});
     $(".video2015").colorbox({iframe:true, width:"80%", height:"80%"});
     $(".video2014").colorbox({iframe:true, width:"80%", height:"80%"});
     $('a.page-scroll').bind('click', function(event) {

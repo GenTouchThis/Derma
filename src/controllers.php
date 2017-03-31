@@ -48,6 +48,10 @@ $app->get('/ponentes', function () use ($app) {
     return $app['twig']->render('pages/ponentes.twig.html', array());
 })->bind('ponentes');
 
+$app->get('/inscripcion', function () use ($app) {
+    return $app['twig']->render('pages/inscripcion.twig.html', array());
+})->bind('inscripcion');
+
 $app->get('/contacto', function () use ($app) {
     return $app['twig']->render('pages/contacto.twig.html', array());
 })->bind('contacto');

@@ -137,9 +137,9 @@ div.line-center {
 }
 
 .alert-info {
-    background-color: #A3E3F7;
-    border-color: #1996C4;
-    color: #1996C4;
+    background-color: #B3E5FC;
+    border-color: #81D4FA;
+    color: #455A64;
 }
 
 .player{
@@ -401,4 +401,32 @@ h3.tab-head{
 
 #new{
   background: #FAFAFA;
+}
+
+.teal{
+  background: rgba(232,243,250,1);
+  background: -moz-linear-gradient(-45deg, rgba(232,243,250,1) 0%, rgba(190,250,235,1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(232,243,250,1)), color-stop(100%, rgba(190,250,235,1)));
+  background: -webkit-linear-gradient(-45deg, rgba(232,243,250,1) 0%, rgba(190,250,235,1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(232,243,250,1) 0%, rgba(190,250,235,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(232,243,250,1) 0%, rgba(190,250,235,1) 100%);
+  background: linear-gradient(135deg, rgba(232,243,250,1) 0%, rgba(190,250,235,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8f3fa', endColorstr='#befaeb', GradientType=1 );
+  border: 1px solid #ECEFF1;
+  border-radius: 3px;
+  color: #78909C;
+  padding: 15px; 
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.teal label{
+  font-weight: 300;
+}
+
+.teal h4{
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
 }

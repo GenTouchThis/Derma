@@ -1,0 +1,138 @@
+{% extends "layout.twig.html" %}
+
+{% block content %}
+	<!-- Services Section -->
+	<section id="services">
+		<div class="container text-justify">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2>Inscripción</h2>
+					<div class="line-center"></div>
+				</div>
+				<div class="col-md-6 col-md-offset-3">
+					<div class="well text-center">
+						<h3>
+							Curso personalizado de<br/>
+							voluminización facial y botulínica.<br/>
+							<small>
+								Técnicas avanzadas
+							</small>
+						</h3>
+						<h4>
+							7 y 8 de Abril de 2017
+						</h4>
+						<span class="lead">Costo de Inscripción:</span><br/>
+						<strong>$ 1,160.00 Dólares<br/>
+						Pago vía PayPal</strong>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<form class="teal">
+						<h4>Datos Generales</h4>
+						<div class="form-group">
+							<label class="control-label" for="name">Nombre</label>
+							<input class="form-control" id="nombre" name="nombre" type="text"/>
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="apPaterno">Apellido Paterno</label>
+							<input class="form-control" id="apPaterno" name="apPaterno" type="text"/>
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="apMaterno">Apellido Materno</label>
+							<input class="form-control" id="apMaterno" name="apMaterno" type="text"/>
+						</div>
+						<div class="form-group">
+							<label class="control-label requiredField" for="email">Email<span>*</span></label>
+							<input class="form-control" id="email" name="email" type="text"/>
+						</div>
+						<div class="form-group">
+							Requiere Factura<span>*</span>
+						</div>
+						<div class="form-group">
+							<label class="radio-inline">
+								<input type="radio" name="optradio">Si
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="optradio">No
+							</label>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<h4>Datos de Facturación</h4>
+							</div>
+							<div class="col-md-8">
+								<div class="form-group">
+									<label class="control-label" for="razonSocial">Razón Social</label>
+									<input class="form-control" id="razonSocial" name="razonSocial" type="text"/>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label class="control-label" for="rfc">RFC</label>
+									<input class="form-control" id="rfc" name="rfc" type="text"/>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<label class="control-label" for="direccion">Dirección</label>
+									<input class="form-control" id="direccion" name="direccion" type="text"/>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<div class="form-group">
+									<label class="control-label" for="numExt">Número Exterior</label>
+									<input class="form-control" id="numExt" name="numExt" type="text"/>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="form-group">
+									<label class="control-label" for="numInt">Número Interior</label>
+									<input class="form-control" id="numInt" name="numInt" type="text"/>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="control-label" for="colonia">Colonia</label>
+									<input class="form-control" id="colonia" name="colonia" type="text"/>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="control-label" for="dele">Delegación/Municipio</label>
+									<input class="form-control" id="dele" name="dele" type="text"/>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="control-label" for="estado">Estado</label>
+									<input class="form-control" id="estado" name="estado" type="text"/>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<label class="control-label requiredField" for="emailFact">Email para envío de Factura<span>*</span></label>
+									<input class="form-control" id="emailFact" name="emailFact" type="text"/>
+								</div>
+							</div>
+						</div>
+						<div class="divider-sm"></div>
+						<div class="form-group">
+							<button class="btn btn-info" name="submit" type="submit"><i class="fa fa-paypal" aria-hidden="true"></i> Pagar vía PayPal</button>
+							<button class="btn btn-default" name="reset" type="reset">Limpiar</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}

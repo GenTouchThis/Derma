@@ -21,7 +21,10 @@
         "symfony/security": "~2.7|3.0.*",
         "symfony/translation": "~2.7|3.0.*",
         "symfony/twig-bridge": "~2.7|3.0.*",
-        "symfony/validator": "~2.7|3.0.*"
+        "symfony/validator": "~2.7|3.0.*",
+        "doctrine/common": "2.5.*@dev",
+        "doctrine/orm": "2.5.*@dev",
+        "doctrine/dbal": "2.5.*@dev"
     },
     "autoload": {
         "psr-0": { "": "src/" }

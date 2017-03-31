@@ -420,7 +420,7 @@ h3.tab-head{
   font-size: 12px;
 }
 
-.teal label{
+.teal label {
   font-weight: 300;
 }
 
@@ -429,4 +429,9 @@ h3.tab-head{
   margin-bottom: 20px;
   font-weight: 300;
   letter-spacing: 1px;
+}
+
+label.error {
+  display: none;
+  color: #ff0000;
 }

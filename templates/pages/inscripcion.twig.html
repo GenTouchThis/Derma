@@ -28,111 +28,230 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6 col-md-offset-3">
-					<form class="teal">
+				<div id="pregregistro" class="col-md-6 col-md-offset-3">
+					<form class="teal" name="registro" id="registro" novalidate>
 						<h4>Datos Generales</h4>
 						<div class="form-group">
-							<label class="control-label" for="name">Nombre</label>
-							<input class="form-control" id="nombre" name="nombre" type="text"/>
+							<label class="control-label" for="nombre">Nombre: <span>*</span></label>
+							<input class="form-control" id="nombre" name="nombre" type="text" required />
 						</div>
 						<div class="form-group">
-							<label class="control-label" for="apPaterno">Apellido Paterno</label>
-							<input class="form-control" id="apPaterno" name="apPaterno" type="text"/>
+							<label class="control-label" for="paterno">Apellido Paterno: <span>*</span></label>
+							<input class="form-control" id="paterno" name="paterno" type="text" required />
 						</div>
 						<div class="form-group">
-							<label class="control-label" for="apMaterno">Apellido Materno</label>
-							<input class="form-control" id="apMaterno" name="apMaterno" type="text"/>
+							<label class="control-label" for="materno">Apellido Materno:</label>
+							<input class="form-control" id="materno" name="materno" type="text" />
 						</div>
 						<div class="form-group">
-							<label class="control-label requiredField" for="email">Email<span>*</span></label>
-							<input class="form-control" id="email" name="email" type="text"/>
+							<label class="control-label requiredField" for="email">Correo electrónico: <span>*</span></label>
+							<input class="form-control" id="email" name="email" type="text" required />
 						</div>
 						<div class="form-group">
 							Requiere Factura<span>*</span>
 						</div>
 						<div class="form-group">
 							<label class="radio-inline">
-								<input type="radio" name="optradio">Si
+								<input type="radio" name="requiereFactura" value="Si" required /> Si
 							</label>
 							<label class="radio-inline">
-								<input type="radio" name="optradio">No
+								<input type="radio" name="requiereFactura" value="No" /> No
 							</label>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<h4>Datos de Facturación</h4>
-							</div>
-							<div class="col-md-8">
-								<div class="form-group">
-									<label class="control-label" for="razonSocial">Razón Social</label>
-									<input class="form-control" id="razonSocial" name="razonSocial" type="text"/>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="form-group">
-									<label class="control-label" for="rfc">RFC</label>
-									<input class="form-control" id="rfc" name="rfc" type="text"/>
-								</div>
+							<div>
+								<label class="error" for="requiereFactura">Este campo es obligatorio.</label>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="form-group">
-									<label class="control-label" for="direccion">Dirección</label>
-									<input class="form-control" id="direccion" name="direccion" type="text"/>
+						<div class="factura hide">
+							<div class="row">
+								<div class="col-md-12">
+									<h4>Datos de Facturación</h4>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<label class="control-label requiredField" for="pais">País: <span>*</span></label>
+										<select class="form-control" id="pais" name="pais" required disabled>
+											<option value="">Seleccione</option>
+											{% for pais in paises %}
+											<option value="{{ pais.pais_nombreEs }}"{{ pais.pais_idPais == 142 ? ' selected="selected"' : '' }}>{{ pais.pais_nombreEs }}</option>
+											{% endfor %}
+                                    	</select>
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div class="form-group">
+										<label class="control-label" for="razonSocial">Razón Social:  <span>*</span></label>
+										<input class="form-control" id="razonSocial" name="razonSocial" type="text" required disabled />
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<label class="control-label" for="rfc">RFC: <span>*</span></label>
+										<input class="form-control" id="rfc" name="rfc" type="text" required disabled placeholder="Solo para México" />
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<div class="form-group">
-									<label class="control-label" for="numExt">Número Exterior</label>
-									<input class="form-control" id="numExt" name="numExt" type="text"/>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<label class="control-label" for="direccion">Dirección: <span>*</span></label>
+										<input class="form-control" id="direccion" name="direccion" type="text" required disabled />
+									</div>
 								</div>
 							</div>
-							<div class="col-md-3">
-								<div class="form-group">
-									<label class="control-label" for="numInt">Número Interior</label>
-									<input class="form-control" id="numInt" name="numInt" type="text"/>
+							<div class="row">
+								<div class="col-md-3">
+									<div class="form-group">
+										<label class="control-label" for="numExt">Número Exterior: <span>*</span></label>
+										<input class="form-control" id="numExt" name="numExt" type="text" required disabled />
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="form-group">
+										<label class="control-label" for="numInt">Número Interior</label>
+										<input class="form-control" id="numInt" name="numInt" type="text" disabled />
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label" for="colonia">Colonia: <span>*</span></label>
+										<input class="form-control" id="colonia" name="colonia" type="text" required disabled />
+									</div>
 								</div>
 							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<label class="control-label" for="colonia">Colonia</label>
-									<input class="form-control" id="colonia" name="colonia" type="text"/>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label" for="delOMun">Delegación/Municipio: <span>*</span></label>
+										<input class="form-control" id="delOMun" name="delOMun" type="text" required disabled placeholder="Solo para México" />
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label" for="estado">Estado: <span>*</span></label>
+										<input class="form-control" id="estado" name="estado" type="text" required disabled />
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<label class="control-label" for="dele">Delegación/Municipio</label>
-									<input class="form-control" id="dele" name="dele" type="text"/>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<label class="control-label" for="estado">Estado</label>
-									<input class="form-control" id="estado" name="estado" type="text"/>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="form-group">
-									<label class="control-label requiredField" for="emailFact">Email para envío de Factura<span>*</span></label>
-									<input class="form-control" id="emailFact" name="emailFact" type="text"/>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<label class="control-label requiredField" for="emailFacturacion">Correo electrónico para envío de Factura: <span>*</span></label>
+										<input class="form-control" id="emailFacturacion" name="emailFacturacion" type="text" required disabled />
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="divider-sm"></div>
+						<div class="form-alert alert alert-danger hide">&nbsp;</div>
 						<div class="form-group">
-							<button class="btn btn-info" name="submit" type="submit"><i class="fa fa-paypal" aria-hidden="true"></i> Pagar vía PayPal</button>
-							<button class="btn btn-default" name="reset" type="reset">Limpiar</button>
+							<button class="btn btn-info" name="submit" type="submit" id="setFinalizar"><i class="fa fa-paypal" aria-hidden="true"></i> Pagar vía PayPal</button>
+							<!--<button class="btn btn-default" name="reset" type="reset">Limpiar</button>-->
 						</div>
 					</form>
+				</div>
+				<div id="pago" class="col-md-6 col-md-offset-3 hide">
+					<div class="well text-center">
+						<h4>Sus datos fueron recibidos con exito.</h4>
+						<div>
+							Para proceder hacer su pago, por favor, de un clic en el boton <strong>"Pagar ahora"</strong> esto lo llevara a la pagina de pagos PayPal.
+						</div>
+						<br />
+						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+							<input type="hidden" name="cmd" value="_xclick" />
+							<input type="hidden" name="business" value="UD2XEDG4CNKFW" />
+							<input type="hidden" name="lc" value="MX" />
+							<input type="hidden" name="item_name" value="CURSO-2017" />
+							<input type="hidden" name="item_number" value="123456789" />
+							<input type="hidden" name="amount" value="1160.00" />
+							<input type="hidden" name="currency_code" value="USD" />
+							<input type="hidden" name="button_subtype" value="services" />
+							<input type="hidden" name="no_note" value="0" />
+							<input type="hidden" name="cn" value="Dar instrucciones especiales al vendedor:" />
+							<input type="hidden" name="no_shipping" value="1" />
+							<input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynowCC_LG.gif:NonHosted" />
+							<input type="image" src="https://www.paypalobjects.com/es_XC/MX/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea." />
+							<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1" />
+						</form>
+						<br />
+						<div>
+							Una vez que usted realice su pago, verificarmos el mismo y le enviarmos su confirmación de registro al curso, al correo electrónico: <strong id="emailSend">&nbsp;</strong>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+{% endblock %}
+
+{% block js %}
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+<script type="text/javascript" src="{{asset('js/jquery.validate.es.js')}}"></script>
+<script type="text/javascript">
+$(function() {
+	$("input[name='requiereFactura']").click(function() {
+		var _inp = $(this).val();
+		if (_inp == "Si") {
+			$(".factura").removeClass("hide");
+
+			$("#pais, #razonSocial, #rfc, #direccion, #numExt, #numInt, #colonia, #delOMun, #estado, #emailFacturacion").removeAttr("disabled");
+
+			if ($("#pais").val() != "México") {
+				$("#rfc, #delOMun").attr("disabled", "disabled");
+			} else {
+				$("#rfc, #delOMun").removeAttr("disabled");
+			}
+		} else {
+			$(".factura").addClass("hide");
+
+			$("#pais, #razonSocial, #rfc, #direccion, #numExt, #numInt, #colonia, #delOMun, #estado, #emailFacturacion").attr("disabled", "disabled");
+		}
+	});
+
+	$("#pais").change(function() {
+		var _val = $(this).val();
+		if (_val != "México") {
+			$("#rfc, #delOMun").attr("disabled", "disabled");
+		} else {
+			$("#rfc, #delOMun").removeAttr("disabled");
+		}
+	});
+	/**
+	 * FINALIZAR
+	 */
+	 $('#registro').validate({
+		submitHandler: function(form) {
+
+			var qry = $(form).serialize();
+
+			$.ajax({
+				type: 'POST',
+				url: './inscripcion',
+				data: qry,
+				dataType: 'json',
+				beforeSend: function() {
+					$('#registro').find('.form-alert').html('&nbsp;');
+					$('#registro').find("button").attr('disabled', 'disabled');
+				},
+				success: function(sRes) {
+					if (sRes.status) {
+						$("#pregregistro").remove();
+						$("#pago").removeClass("hide");
+						$("input[name='item_number']").val(sRes.folioRegistro);
+						$("#emailSend").html(sRes.email);
+					} else {
+						$('#registro').find('.form-alert').html(sRes.mensaje);
+						$('#registro').find('button').removeAttr('disabled');
+					}
+				}
+			});
+
+			return false;
+		},
+		errorPlacement: function(error, element) {
+			error.appendTo(element.parent().append());
+		}
+	});
+});
+</script>
 {% endblock %}

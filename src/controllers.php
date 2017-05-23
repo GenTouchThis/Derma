@@ -41,7 +41,7 @@ $app->get('/galeria', function () use ($app) {
 })->bind('galeria');
 
 $app->get('/costos', function () use ($app) {
-    return $app['twig']->render('pages/index.twig.html', array());
+    return $app['twig']->render('pages/costos.twig.html', array());
 })->bind('costos');
 
 $app->get('/ponentes', function () use ($app) {
